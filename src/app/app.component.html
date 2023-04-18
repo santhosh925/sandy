@@ -1,0 +1,91 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+   
+       
+    <div class="coo">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">S.a.n.d.y</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div   class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll" style="max-height: 100px;">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                Angular
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" [routerLink]="['/binding']">binding</a></li>
+                <li><a class="dropdown-item"[routerLink]="['/products']">products </a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item"[routerLink]="['/reactiveform']">reactiveform</a></li>
+                <li><a class="dropdown-item"[routerLink]="['/httpclient-to-extendservice']">httpclient-to-extendservice</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item"[routerLink]="['/templatedriven']">templatedriven</a></li>
+                <li><a class="dropdown-item"[routerLink]="['/animation']">animation</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item"[routerLink]="['/routpharam']">routpharam</a></li>
+                <li><a class="dropdown-item"[routerLink]="['/guards']">guards</a></li>
+
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+    </div>  
+<!-- 
+<input type="button" value="bindingpage" (click)="bindingcall()">
+
+<input type="button" value="products" (click)="productscall()">
+
+
+<binding *ngIf="binding">
+</binding>
+
+<app-products *ngIf="products">
+</app-products> -->
+<!-- <a [routerLink]="['/binding']">binding</a> <br><br>            -->
+
+<!-- <a [routerLink]="['/products']">products</a> <br> <br> -->
+
+<!-- <a [routerLink]="['/products']">products</a> <br><br> -->
+<!-- <a [routerLink]="['/pipes']">pipes</a><br><br> -->
+<!-- <a [routerLink]="['/templatedriven']">templatedriven</a><br><br> -->
+<!-- <a [routerLink]="['/reactiveform']">reactiveform</a><br><br> -->
+<!-- <a [routerLink]="['/httpclient-to-extendservice']">httpclient-to-extendservice</a><br><br> -->
+<!-- <a [routerLink]="['/animation']">animation</a><br><br> -->
+<!-- <a [routerLink]="['/routpharam']">routpharam</a><br><br> -->
+
+</body>
+</html>
+
+
+
+
+
+<!-- <welcome>s.a.n.d.y</welcome> -->
+<router-outlet></router-outlet>

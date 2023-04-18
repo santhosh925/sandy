@@ -1,0 +1,23 @@
+<!-- <table *ngFor="let s of mobiles">{{s.model}}</table> -->
+
+<table border="2">
+    <tr>
+        <th>model</th>
+        <th>price</th>
+        <th>processor</th>
+        <th>rating</th>
+    </tr>
+    <tr *ngFor="let a of mobiles">
+        
+        <td>{{a.model}}</td>
+        <td>{{a.price}}</td>
+        <td>{{a.processor}}</td>
+        <td>{{a.rating}}</td>
+    </tr>
+   
+</table>
+
+<!-- <app-rating [val]="10"></app-rating> -->
+<app-rating [val]="5"></app-rating>
+
+<p>products works!</p>

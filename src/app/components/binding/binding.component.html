@@ -1,0 +1,41 @@
+<div>
+    <input type="button" value="click">
+    <h1>Angular</h1>
+    <img src="https://miro.medium.com/max/480/1*VKY-Ldkt-iHobItql7G_5w.png" alt="">
+  </div>
+  {{santhosh}}
+  <a [href]="url">click me</a>
+  <input type="button" value="enter" (click)="angu()">
+  {{hero}}
+  <input type="text" value="enter"[(ngModel)]="hero">
+  <div *ngIf="show">
+    .....
+  </div>
+  <div *ngFor="let e of array">
+    {{e}}
+  
+  </div>
+  <span *ngFor="let art of art">
+    {{art}}
+  </span>
+  <div class="realme">narzo 20 pro</div>
+  <div [ngClass] ="obj">say hiii</div>
+  <div class="redmi">hellllo</div>
+  <div [ngStyle]="san">yellow</div>
+  <div *ngIf="sa">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed soluta modi saepe. Modi, doloremque voluptas.
+  </div>
+  <input type="button" value="show" (click)="sh()">
+  <input type="button" value="hide"(click)="hi()">
+  <input type="button" value="readmore"(click)="readmore()">
+  <div *ngIf="more">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam repellat nulla facilis aliquam labore nam!
+  </div>
+  <input type="text" value="text1" ><br><br>
+  <input type="button" value="button1">
+  
+  
+  <welcome [name]="'santhosh'"(hi)="parent($event)"></welcome>
+  
+ 
+  
